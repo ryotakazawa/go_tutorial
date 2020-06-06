@@ -37,4 +37,9 @@ func main() {
 	// 以下のように書くと、マップの宣言と初期化を同じ行で済ませられる。
 	n := map[string]int{"foo": 1, "bar": 2}
 	fmt.Println("map:", n)
+
+	delete(n, "bar")
+	fmt.Println(n)
+	_, taka := n["bar"]
+	fmt.Println("taka:", taka)
 }
