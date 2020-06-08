@@ -43,5 +43,11 @@ func main() {
 	sp.age = 51
 	fmt.Println(sp.age)
 
-	fmt.Println(dog{name: "crusoe", age: 8})
+	//fmt.Println(dog{name: "crusoe", age: 8})
+
+	//ポインタの勉強
+	name := "高沢"
+	namePoint := &name
+	fmt.Println(namePoint)
+	fmt.Println(*namePoint)
 }
